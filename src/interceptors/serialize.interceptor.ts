@@ -32,6 +32,6 @@ export class SerializeInterceptor implements NestInterceptor {
                     excludeExtraneousValues: true,
                 });
             })
-        )
+        );
     }
 }

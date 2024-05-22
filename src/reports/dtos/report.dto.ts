@@ -22,6 +22,9 @@ export class ReportDto {
     @Expose()
     year: number;
 
+    @Expose()
+    approved: boolean;
+
     // obj is entire report instance. get the user's id from there instead of returning entire user.
     @Transform(({ obj }) => obj.user.id)
     @Expose()
